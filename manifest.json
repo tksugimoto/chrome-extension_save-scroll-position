@@ -1,0 +1,26 @@
+{
+	"name": "ページ内ブックマーク（スクロール位置）",
+	"version": "0.1",
+	"manifest_version": 2,
+
+	"description": "ページ内の表示位置（スクロール量）を保存して、ジャンプできるようにする（ただしページ更新したらリセット）",
+
+	"icons": {
+		"128": "icon/icon.png"
+	},
+	"permissions": [
+		"activeTab"
+	],
+
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	},
+		
+	"page_action": {
+		"default_icon": "icon/icon.png",
+		"default_popup": "popup.html",
+		"default_title": "ページ内の表示位置（スクロール量）を保存する"
+	}
+}
